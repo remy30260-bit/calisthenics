@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calisthenics — Logotypes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#DED4C2;font-family:'Archivo',sans-serif;color:#2A241E;padding:48px 32px 80px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1080px;margin:0 auto;}
+  .head{margin-bottom:36px;}
+  .head .ey{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#9C8E78;}
+  .head h1{font-size:34px;font-weight:900;letter-spacing:-1px;margin-top:8px;}
+  .head p{font-size:15px;color:#766A59;margin-top:8px;max-width:580px;line-height:1.5;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .card{background:#F4EDDF;border:1.5px solid #CDBFA8;padding:30px;min-height:200px;display:flex;flex-direction:column;}
+  .card.ink{background:#221E18;border-color:#3A332A;}
+  .card.terra{background:#BD5B36;border-color:#A4492A;}
+  .card.sage{background:#5F6E4F;border-color:#536046;}
+  .card .lbl{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9C8E78;margin-bottom:auto;}
+  .card.ink .lbl,.card.terra .lbl,.card.sage .lbl{color:rgba(244,237,223,.5);}
+  .lock{display:flex;align-items:center;margin-top:34px;}
+
+  /* 1 — stacked condensed */
+  .l1 .top{font-size:46px;font-weight:900;letter-spacing:-2px;line-height:.84;text-transform:uppercase;}
+  .l1 .bot{font-size:46px;font-weight:900;letter-spacing:-2px;line-height:.84;text-transform:uppercase;color:#BD5B36;}
+  .l1 .tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#9C8E78;margin-top:10px;}
+
+  /* 2 — horizontal mono tracking */
+  .l2{flex-direction:column;align-items:flex-start;gap:9px;}
+  .l2 .w{font-size:30px;font-weight:800;letter-spacing:-1px;}
+  .l2 .bar{display:flex;align-items:center;gap:10px;}
+  .l2 .pill{background:#BD5B36;color:#F6EFE3;font-family:'Space Mono',monospace;font-weight:700;font-size:12px;letter-spacing:1px;padding:3px 8px;}
+  .l2 .meta{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9C8E78;}
+
+  /* 3 — barred (pull-up bar through word) */
+  .l3{flex-direction:column;align-items:flex-start;}
+  .l3 .row{position:relative;display:inline-block;}
+  .l3 .w{font-size:36px;font-weight:900;letter-spacing:-1.5px;text-transform:uppercase;position:relative;z-index:1;}
+  .l3 .barline{position:absolute;left:-6px;right:-6px;top:50%;height:5px;background:#BD5B36;transform:translateY(-50%);z-index:0;}
+  .l3 .tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#9C8E78;margin-top:12px;}
+
+  /* 4 — terracotta block, knockout */
+  .l4{flex-direction:column;align-items:flex-start;gap:0;}
+  .l4 .w{font-size:34px;font-weight:900;letter-spacing:-1.4px;text-transform:uppercase;color:#F6EFE3;line-height:1;}
+  .l4 .sub{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(246,239,227,.7);margin-top:9px;}
+
+  /* 5 — mono ticker */
+  .l5{flex-direction:column;align-items:flex-start;gap:12px;}
+  .l5 .tick{font-family:'Space Mono',monospace;font-size:19px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+  .l5 .tick .dot{color:#BD5B36;}
+  .l5 .rule{width:100%;height:1.5px;background:#CDBFA8;}
+  .l5 .meta{display:flex;justify-content:space-between;width:100%;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9C8E78;}
+
+  /* 6 — mixed weight, sage */
+  .l6{flex-direction:column;align-items:flex-start;gap:8px;}
+  .l6 .w{font-size:33px;letter-spacing:-1.2px;color:#F4EDDF;}
+  .l6 .w b{font-weight:900;}
+  .l6 .w span{font-weight:400;opacity:.78;}
+  .l6 .tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:rgba(244,237,223,.6);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="ey">Identité · Logotypes</div>
+    <h1>Le nom « Calisthenics »</h1>
+    <p>Six traitements du nom, du plus condensé au plus typographique. Même langage hybride : Archivo en graisses lourdes, Space Mono pour les détails, accents terracotta / sauge / encre.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- 1 -->
+    <div class="card">
+      <div class="lbl">01 · Empilé condensé</div>
+      <div class="lock l1">
+        <div>
+          <div class="top">Calis</div>
+          <div class="bot">thenics</div>
+          <div class="tag">Programme · 12 semaines</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <div class="lbl">02 · Horizontal + pastille</div>
+      <div class="lock l2">
+        <div class="w">Calisthenics</div>
+        <div class="bar">
+          <span class="pill">12S</span>
+          <span class="meta">Force au poids du corps</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="lbl">03 · Barre de traction</div>
+      <div class="lock l3">
+        <div class="row">
+          <div class="barline"></div>
+          <div class="w">Calisthenics</div>
+        </div>
+        <div class="tag">12 semaines · sans matériel</div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card terra">
+      <div class="lbl">04 · Bloc terracotta</div>
+      <div class="lock l4">
+        <div class="w">Calisthenics</div>
+        <div class="sub">Méthode 12 semaines</div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="lbl">05 · Ticker mono</div>
+      <div class="lock l5">
+        <div style="width:100%">
+          <div class="tick">Calisthenics<span class="dot"> · </span>12S</div>
+          <div class="rule" style="margin:12px 0 8px"></div>
+          <div class="meta"><span>Semaine 01 → 12</span><span>Calisthenics</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card sage">
+      <div class="lbl">06 · Graisses mixtes</div>
+      <div class="lock l6">
+        <div class="w"><b>CALIS</b><span>THENICS</span></div>
+        <div class="tag">Douze semaines</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
